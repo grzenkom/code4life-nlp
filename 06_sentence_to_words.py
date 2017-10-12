@@ -26,10 +26,14 @@ def main():
     print tags_no_sw
     # [('boldly', 'RB'), ('go', 'VB'), ('man', 'NN'), ('gone', 'VBN')]
 
-    l = WordNetLemmatizer()
-    lemmas = map(lambda t: l.lemmatize(t[0], get_nltk_pos(t[1])), tags_no_sw)
+    lemmas = map(lambda t: lemmatize_tag(t), tags_no_sw)
     print lemmas
     # ['boldly', 'go', 'man', 'go']
+
+
+def lemmatize_tag(tag):
+    l = WordNetLemmatizer()
+    return l.lemmatize(tag[0], get_nltk_pos(tag[1]))
 
 
 def get_nltk_pos(tag):
