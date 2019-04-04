@@ -1,4 +1,4 @@
-![Code4Life logo](http://code4life.pl/images/code4life-logo.png)
+![Code4Life logo](https://code4life.pl/assets/images/code4life-logo.png)
 
 http://code4life.pl/conference/start
 
